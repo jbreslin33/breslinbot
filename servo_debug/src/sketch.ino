@@ -1,15 +1,11 @@
+//www.elegoo.com
+#include <Servo.h>
+Servo myservo;
 
-#define LED_PIN 13
+void setup(){
+  myservo.attach(3);
+  myservo.write(90);// move servos to center position -> 90°
+} 
+void loop(){
 
-void setup()
-{
-    pinMode(LED_PIN, OUTPUT);
-}
-
-void loop()
-{
-    digitalWrite(LED_PIN, HIGH);
-    delay(100);
-    digitalWrite(LED_PIN, LOW);
-    delay(900);
 }
